@@ -49,7 +49,7 @@ app.get('/', (req, res) => {
 });
 
 // サーバーの起動
-const PORT = process.env.PORT || 4002;
+const PORT = process.env.PORT || 4004;
 app.listen(PORT, () => {
     console.log(`サーバーがポート${PORT}で起動しました`);
 });
