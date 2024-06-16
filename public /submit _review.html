@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>レビューを投稿する - koremite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-page="home">ホーム</a></li>
+                <li><a href="reviews.html" data-page="reviews">レビューを見る</a></li>
+                <li><a href="submit_review.html" data-page="submit_review">レビューを投稿する</a></li>
+                <li><a href="login.html" data-page="login">登録・ログイン</a></li>
+                <li><a href="contact.html" data-page="contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <h1>レビューを投稿する - koremite</h1>
+    </header>
+    <main class="container">
+        <form id="submit-review-form">
+            <label for="title">タイトル</label>
+            <input type="text" id="title" name="title" required>
+            <label for="cover">表紙画像のURL</label>
+            <input type="url" id="cover" name="cover" required>
+            <label for="summary">あらすじ</label>
+            <textarea id="summary" name="summary" required></textarea>
+            <label for="review">レビュー</label>
+            <textarea id="review" name="review" required></textarea>
+            <button type="submit">レビューを投稿する</button>
+        </form>
+    </main>
+</body>
+</html>

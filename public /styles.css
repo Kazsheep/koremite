@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.review-slider-wrapper {
+    display: flex;
+    overflow-x: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+.review-slider-wrapper > div {
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+.review-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.genre-selection ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.genre-selection ul li {
+    width: calc(25% - 10px);
+    margin: 5px;
+}
+
+.genre-selection ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.genre-selection ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.genre-battle { background-image: url('images/battle.jpg'); }
+.genre-action { background-image: url('images/action.jpg'); }
+.genre-sports { background-image: url('images/sports.jpg'); }
+.genre-fantasy { background-image: url('images/fantasy.jpg'); }
+.genre-sf { background-image: url('images/sf.jpg'); }
+.genre-horror { background-image: url('images/horror.jpg'); }
+.genre-comedy { background-image: url('images/comedy.jpg'); }
+.genre-drama { background-image: url('images/drama.jpg'); }
+.genre-mystery { background-image: url('images/mystery.jpg'); }
+.genre-history { background-image: url('images/history.jpg'); }
+.genre-romance { background-image: url('images/romance.jpg'); }
+.genre-mecha { background-image: url('images/mecha.jpg'); }
