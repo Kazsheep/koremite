@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 
 app.use(bodyParser.json());
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public'))); // 静的ファイルの提供
 
 const users = {}; // 仮のユーザーデータベース
 
@@ -43,8 +43,13 @@ app.post('/submit_review', (req, res) => {
     });
 });
 
+// ルートパスに対する応答
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
 // サーバーの起動
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4001;
 app.listen(PORT, () => {
     console.log(`サーバーがポート${PORT}で起動しました`);
 });
