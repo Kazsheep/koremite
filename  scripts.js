@@ -34,8 +34,4 @@ document.addEventListener('DOMContentLoaded', () => {
                 review: formData.get('review')
             };
             // サーバーにレビューを送信（仮）
-            console.log('レビューが送信されました:', reviewData);
-            alert('レビューが送信されました');
-        });
-    }
-});
+            console
