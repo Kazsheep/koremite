@@ -44,11 +44,7 @@ app.post('/submit_review', (req, res) => {
 });
 
 // サーバーの起動
-<<<<<<< HEAD
 const PORT = process.env.PORT || 4000;
-=======
-const PORT = 4000;
->>>>>>> main
 app.listen(PORT, () => {
     console.log(`サーバーがポート${PORT}で起動しました`);
 });
